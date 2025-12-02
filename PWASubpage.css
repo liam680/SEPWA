@@ -1,0 +1,24 @@
+html{
+background-color: rgba(48, 104, 207, 0.757);
+font-family:Arial, sans-serif;
+font-size: 16px;
+scroll-behavior: auto;
+
+}
+h1{
+font-weight: 20px;
+font-style: normal;
+}
+h2{
+font-weight: 16px;
+font-style: normal;
+}
+img{
+width: 250px;
+border: 50px;
+height: 250px;
+padding: 20px;
+position:relative;
+left: 1000px;
+}
+
