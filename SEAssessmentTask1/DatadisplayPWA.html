@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>Access-Control-Allow-Origin
+<link rel="stylesheet" href="PWASubpage.css"></link>
+ <ul></ul>
+<script>
+ fetch('https://www.weatherzone.com.au/nsw/hunter/newcastle')
+ .then(res => {
+    console.log(res)
+    return res.json() 
+ })
+ .then(data => {
+    data.forEach(user => {
+        const markup = '<li>${user.Name}</li>'
+
+        document.querySelector('ul').insertAdjacentHTML('beforeend', markup); 
+    })  
+ })
+.catch(error => console.log(error));
+</script>
+</header>
+</body>
+</html>
